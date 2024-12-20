@@ -37,7 +37,6 @@ function load(title, content){
   header.textContent = title;
   header.className = 'accordion-header';
   header.style.marginBottom = '0px';
-  header.contentEditable = 'true';
   header.addEventListener('click', () => {
     const content = header.nextElementSibling;
     content.style.display = content.style.display === 'block' ? 'none' : 'block';
@@ -48,7 +47,6 @@ function load(title, content){
   contents.className = 'accordion-content';
   contents.style.display = 'block';
   contents.style.marginTop = '0px';
-  contents.contentEditable = 'true';
 
   const button = document.createElement('button');
   button.textContent = "Видалити"
